@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-zuoyoujiantou"></i>
+                    <div class="name">左右箭头</div>
+                    <div class="fontclass">.icon-zuoyoujiantou</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-cmstubiaozitihua15"></i>
+                    <div class="name">邮件</div>
+                    <div class="fontclass">.icon-cmstubiaozitihua15</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-ttpodicon"></i>
+                    <div class="name">设置</div>
+                    <div class="fontclass">.icon-ttpodicon</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-ttpodicon1"></i>
+                    <div class="name">音量</div>
+                    <div class="fontclass">.icon-ttpodicon1</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-msnui-maximize"></i>
+                    <div class="name">最大化</div>
+                    <div class="fontclass">.icon-msnui-maximize</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-sousuo"></i>
+                    <div class="name">搜索</div>
+                    <div class="fontclass">.icon-sousuo</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-pause-20"></i>
+                    <div class="name">暂停</div>
+                    <div class="fontclass">.icon-pause-20</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-bofang"></i>
+                    <div class="name">播放</div>
+                    <div class="fontclass">.icon-bofang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-xiayishou"></i>
+                    <div class="name">下一首</div>
+                    <div class="fontclass">.icon-xiayishou</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-mini"></i>
+                    <div class="name">mini</div>
+                    <div class="fontclass">.icon-mini</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-xiayishou1"></i>
+                    <div class="name">下一首</div>
+                    <div class="fontclass">.icon-xiayishou1</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-pifu"></i>
+                    <div class="name">皮肤</div>
+                    <div class="fontclass">.icon-pifu</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-zuixiaohua1"></i>
+                    <div class="name">最小化</div>
+                    <div class="fontclass">.icon-zuixiaohua1</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-wangyiyunyinle"></i>
+                    <div class="name">网易云音乐</div>
+                    <div class="fontclass">.icon-wangyiyunyinle</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-zuoyoujiantou1"></i>
+                    <div class="name">左右箭头</div>
+                    <div class="fontclass">.icon-zuoyoujiantou1</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-music"></i>
+                    <div class="name">音乐</div>
+                    <div class="fontclass">.icon-music</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-wangyiyunyinle1"></i>
+                    <div class="name">网易云音乐</div>
+                    <div class="fontclass">.icon-wangyiyunyinle1</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-wangyiyun"></i>
+                    <div class="name">网易云</div>
+                    <div class="fontclass">.icon-wangyiyun</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-wangyiyun1"></i>
+                    <div class="name">网易云</div>
+                    <div class="fontclass">.icon-wangyiyun1</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-minidelete"></i>
+                    <div class="name">mini delete</div>
+                    <div class="fontclass">.icon-minidelete</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>
